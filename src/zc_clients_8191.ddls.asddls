@@ -2,6 +2,9 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Clients'
 @Metadata.ignorePropagatedAnnotations: true
+
+@Metadata.allowExtensions: true
+
 define view entity zc_clients_8191 as select from ztb_clientes_819 as Clients
 
 inner join ztb_clnts_lib_81 as RelCliLib 

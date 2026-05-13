@@ -2,6 +2,9 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Books'
 @Metadata.ignorePropagatedAnnotations: true
+
+@Metadata.allowExtensions: true
+
 define view entity zc_libros_8191 
 as select from ztb_libros_8191 as Books
 
@@ -13,6 +16,7 @@ association [0..*] to zc_clients_8191 as _Clients on $projection.BookId = _Clien
 
 
 {
+    
     key Books.id_libro as BookId,
         Books.titulo as Title,
         Books.bi_categ as Category,        
