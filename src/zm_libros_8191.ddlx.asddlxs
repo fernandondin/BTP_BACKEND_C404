@@ -36,10 +36,7 @@ annotate entity zc_libros_8191
                        targetElement: '_Clients',
                        position: 30 } ],
             fieldGroup: [{ qualifier: 'DetallesLibro',
-                           position: 10 }],
-    
-            lineItem: [ { position: 30,
-                         importance: #HIGH } ] }
+                           position: 10 }] }
     
     BookId;
     
@@ -87,7 +84,7 @@ annotate entity zc_libros_8191
                         value: 'Description',
                         criticality: 'Sales' }] }
     Sales;
-    @UI: { fieldGroup: [{ qualifier: 'DetallesLibros',
+    @UI: { fieldGroup: [{ qualifier: 'DetallesLibro',
                        position: 30 }] }
     Description;
     @UI: { lineItem: [{ position: 80,
